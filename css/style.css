@@ -1,0 +1,1105 @@
+@charset "utf-8" ;
+
+/* リセットcss */
+* {
+  box-sizing: border-box;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin : 0;
+  padding:0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+  
+
+.txts{
+  font-size:12px;
+  padding-top:40px;
+}
+
+
+/* リセットcss 終わり*/
+
+h1 {
+  font-family: 'Bitter', serif;
+  font-size: 36px;
+  border-bottom: 1px solid #cccccc;
+}
+
+h2 {
+  font-family: 'Bitter', serif;
+  font-size: 24px;
+}
+
+/* ボディ */
+body {
+  margin: 0;
+  padding: 0; 
+ /* background-color: rgba(0, 0, 0, 0.7);  */
+  font-size: 15px;
+  line-height: 2;
+  text-align: center;
+  width:100%;
+
+  background: url(../images/elvis-presley-1482026_1280a.jpg)fixed;
+  background-repeat: repeat-y;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size:cover;
+}
+/* ボディ 終わり*/
+
+.wrapper{
+  background-color: rgba(0, 0, 0, 0.7); 
+ 
+}
+
+/* ヘッダー */
+header {
+  width:100%;
+  height:100px;
+  margin: 0 auto; 
+  color:#ffffff;
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.header {
+  /* background-color: rgba(0, 0, 0, 0.7);  */
+
+}
+
+/* #top-video{
+ position: fixed;
+ right: 0;
+ bottom: 0;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ z-index: -100;
+ background: url('poster.jpg') no-repeat;
+ background-size: cover;
+} */
+
+
+#main-phrase{
+width:50%;
+/* background-color:red; */
+margin:0 auto;
+}
+
+
+.logo a {
+  float:left;
+  margin-top: 10px;
+}
+
+.groval-nav {
+  float:right;
+  margin-top:30px;
+}
+
+.groval-nav li {
+  float:left;
+  margin:0 20px;
+  font-size:20px;
+  list-style: none;
+  font-family: 'Bitter', serif;
+}
+
+.groval-nav li a {
+  color:#ffffff;
+}
+
+.groval-nav li a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 8px;
+  text-decoration:none;
+}
+
+/* ここまでヘッダー */
+
+.catch-copy{
+    /* background-color:rgba(0, 0, 0, 0.7); */
+    /* height:auto; */
+    color:#fff;
+    padding:200px 0 0 0;
+    height:100vh;
+    
+}
+
+
+#wraps{
+  padding: 35px 0;
+  /* background-color:rgba(0, 0, 0, 0.7); */
+}
+
+
+/* musicとartsで使用 */
+.contents {
+  width:960px;
+  margin:0 auto;
+  padding-top: 120px;
+}
+
+
+/* footer */
+footer {
+  text-align: center;
+  color:#ffffff;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  clear: both;
+  height:100px;
+}
+
+.webfooter{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* footer 終わり*/
+
+
+/* メイン */
+
+.web-portfolio {
+  /* height: 100vh; */
+  padding: 23px 30px;
+  /* background-color: rgba(0, 0, 0, 0.7);  */
+  color:white;
+}
+
+/* トップページ共通 */
+.heading{
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  border-bottom: double 4px #999;
+}
+
+
+.works-wrapper {
+width:890px;
+margin:0 auto;
+}
+
+
+.work-box {
+  /* background-color: rgba(54, 51, 51, 0.9); */
+  border: 1px solid #333;
+  float: left;
+  margin-bottom:50px;
+  margin-left:30px;
+  margin-top:30px;
+  color:white;
+  position: relative;
+}
+
+.work-box img{
+
+}
+
+.work-box::after{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    content: '';
+      left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+}
+
+.work-box:hover::after{
+  background-color: rgba(0, 0, 0, 0.7);
+  
+}
+
+.work-description {
+  margin: 20px 0;
+}
+
+.work-box .mask{
+  position: absolute;
+  left: 0px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity:0;
+  color: #cccccc;
+  z-index: 1000;
+
+}
+
+.work-box .mask p{
+margin-top:100px;
+}
+
+.work-box .mask:hover{
+   opacity:1;
+   z-index: 1000;
+}
+
+.skill-detail {
+  width:17%;
+  margin:0 auto;
+}
+
+.skill-detail p{
+  text-align: left;
+}
+
+/* トップページノボタン系 */
+.work-description .button {
+  width: 60%;
+  margin-top: 20px;
+  padding: 3px;
+  color:white;
+}
+
+
+.button-ghost {
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+   color:white;
+}
+
+/* トップページノボタン系終わり */
+
+
+/* トップページ共通 終わり*/
+
+
+
+/* トップページの音楽始まり */
+.index-music{
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  padding: 23px 0 10px;
+  color:white;
+}
+
+.music-wrapper{
+width:980px;
+margin:0 auto;
+}
+
+.music-box{
+  background-color: rgba(54, 51, 51, 0.7);
+  border: 1px solid #333;
+  float: left;
+  width:302px;
+  margin-left: 10px;
+  margin-bottom:100px;
+
+}
+
+/* トップページの音楽終わり */
+
+
+/* トップページのアート */
+.arts{
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  padding: 0px 0 150px;
+  color:white;
+}
+
+.arts-box{
+  background-color: rgba(54, 51, 51, 0.7);
+  border: 1px solid #333;
+  margin:0 auto;
+  width:55%;
+  margin-top:80px;
+
+} 
+
+.artimage{
+   width:100%  ;
+
+}
+
+.arts-title{
+color:white;
+text-align: center;
+}
+
+.allbox{
+  padding-top:40px;
+}
+/* トップページのアートここまで*/
+
+
+
+.about{
+  /* background-image: url(/Users/kou/Documents/aivsarts/imge/grafitti-992037_1920.jpg); */
+  background-size: cover;
+  width:65%;
+  margin:0 auto 100px auto;
+  color: white;
+  border:1px solid white;
+  padding-bottom: 70px;
+  position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+  
+
+}
+
+.about-contents{
+  width:64%;
+  margin:0 auto;
+  
+
+}
+
+.title-under{
+  margin-top:50px;
+  
+}
+
+.photo p{
+  margin-top:20px;
+}
+
+
+.history{
+  margin-top:50px;
+  z-index: 1000;
+}
+
+.about-contents li{
+text-align: left;
+}
+
+
+
+
+.skill{
+  color: white;
+  padding-bottom: 70px;
+  margin:200px auto 100px auto ;
+  border:1px solid white;
+  background-color: rgba(0, 0, 0, 0.6);
+  width:65%;
+}
+
+
+/* コンタクト */
+.conect{
+  /* height: 100vh; */
+  
+  padding: 20px 0 150px;
+  color:white;
+}
+
+#conect{
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+.conect-form {
+  width: 50%;
+  margin: 50px auto 0;
+    content:"";
+  display:block;
+  clear:both;
+
+}
+
+.con-t{
+  width:18.8%;
+  margin:0 auto ;
+  /* background-color:blue; */
+
+}
+
+.conect-form input[type=text], .conect-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+  color: #333;
+}
+
+.conect-form textarea {
+  height: 150px;
+}
+
+.conect-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.conect-form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.conect-form{
+  /* background-color:red; */
+}
+
+.towitter{
+   background-image: url(../images/img_1578.jpg);
+   background-size:cover;
+   background-position:right 30% top 30%;   
+  height:120px;
+  width:120px;
+  border-radius: 50%;
+  margin:30px 0px 10px 0px;
+}
+
+.conect-form a{
+color:white;
+}
+
+.contact-text{
+  margin-top:20px;
+}
+
+.fa-twitter{
+  /* float: left; */
+}
+
+
+/* コンタクト終わり */
+
+
+
+
+
+
+
+/* ミュージックドットインデックス */
+
+.music-box img{
+    width:300px;
+    background-color: white;
+
+}
+
+.music-wrapper{
+  width: 970px;
+  margin: 60px auto 0;
+}
+
+.music-description{
+  margin: 20px 0;
+  color:white;
+}
+
+.music-title{
+  width:970px;
+  color:white;
+}
+
+.wrap{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* ミュージックドットインデックス終わり */
+
+
+
+
+
+/* モーダル */
+.login-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  /* display: none;を追加してください */
+  display:none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form, #login-form {
+  width:100%;
+}
+
+#signup-form h2, #login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input, #login-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: black;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+
+.fa {
+  margin-right: 5px;
+}
+/* モーダル終わり */
+  
+
+/* ポートフォリオ  */
+
+#sakuhin{
+background-color: rgba(255,255,255, 1);
+}
+
+.portfolio-wrapper{
+  padding-top:60px;
+}
+
+.portfolio{
+  padding-top:100px;
+  width:100%;
+}
+
+.portfolio-imagetop{
+  width:400px;
+  height:250px;
+  /* background-color:black; */
+  margin-left:60px;
+  margin-top:50px;
+  /* margin:0 auto; */
+}
+
+.portfolio-image{
+  width:180px;
+  height:120px;
+  /* background-color:black; */
+  margin:20px 20px;
+  /* float:left; */
+  
+ 
+}
+.container{
+   display: flex;
+   width:80%;
+   overflow-x: scroll;
+   -webkit-overflow-scrolling: touch;
+   margin-left:60px;
+}
+
+.slide-image{
+  
+}
+
+
+
+.small-image{
+  margin-left:40px;
+  margin-top:30px;
+
+}
+
+
+.portfolio2{
+  margin-top:100px;
+  padding-bottom:100px;
+}
+
+
+
+
+@media screen and (max-width:640px){
+
+
+body {
+  margin: 0;
+  padding: 0; 
+ /* background-color: rgba(0, 0, 0, 0.7);  */
+  font-size: 15px;
+  line-height: 2;
+  text-align: center;
+  width:100%;
+
+  background: url(../images/elvis-presley-1482026_1280a.jpg)fixed;
+  background-repeat: repeat-y;
+  /* background-position: center center; */
+  background-attachment: fixed;
+  /* background-size:cover; */
+}
+
+ .groval-nav li a{
+    text-decoration: none;
+    
+  }
+
+  img{
+width:100%;
+max-width:100%;
+height:auto;  
+}
+
+
+header .logo{
+  width:50%;
+}
+
+
+.catch-copy{
+  padding:100px 0 0 0;
+  margin:0 20px;
+  height:70vh;
+}
+
+
+#main-phrase{
+width:86%;
+/* background-color:red; */
+margin:0 auto;
+text-align: left;
+}
+
+  .work-box {
+  float: none;
+  width:100%;
+  margin-left:0px;
+  margin-top:10%;
+  margin-bottom:30%;
+}
+
+.arts-box{
+  background-color: rgba(54, 51, 51, 0.7);
+  border: 1px solid #333;
+  margin:0 auto;
+  width:75%;
+  margin-top:30%;
+} 
+
+
+
+.contents{
+     max-width:960px;
+  }
+
+ #index .works-wrapper {
+width:100%;
+
+margin:0 auto;
+
+}
+
+.conect-form {
+  width: 87%;
+  margin:5px auto;
+
+
+}
+
+.form{
+  /* background-color: rgba(0, 0, 0, 0.7); */
+
+}
+
+
+#index .music-wrapper{
+  width:100%;
+
+}
+
+#index .music-box{
+  width:73%;
+  float: none;
+  margin:0 auto;
+  margin-top:20%;
+}
+
+
+/* ポートフォリオ */
+.portfolio-image{
+  width:45%;
+  max-width:100%;
+  height:auto;
+   flex: 0 0 50%;
+  
+}
+
+.container{
+   display: ;
+   width:90%; 
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    margin:0 1% 0 5%;
+
+}
+
+.portfolio-imagetop{
+  width:90%;
+  height:auto;
+  margin:0 1%;
+  margin:0 auto;
+}
+/* ポートフォリオ終わり */
+
+
+/* レスポンシブミュージック始まり */
+.music-box img{
+    width:100%;
+    background-color: white;
+
+}
+
+.music-wrapper{
+  width: 100%;
+  margin:0 auto;
+
+}
+
+.music-description{
+  margin: 20px 0;
+  color:white;
+}
+
+.music-title{
+  width:100%;
+  color:white;
+}
+
+.wrap{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contents {
+  width:100%;
+  margin:0 auto;
+  padding-top: 0px;
+}
+
+
+.music-box{
+  background-color: rgba(54, 51, 51, 0.7);
+  border: 1px solid #333;
+  float: none;
+  width:70%;
+  margin:0 auto;
+  margin-bottom:100px;
+
+}
+
+.album{
+  padding-top:30%;
+}
+
+.main{
+  padding-top:25%;
+}
+/* レスポンシブミュージック終わり */
+
+
+
+
+#nav-toggle{
+  width:30px;
+  height:26px;
+  position: absolute;
+  right:15px;
+  top:25px;
+  cursor:pointer;
+}
+
+#nav-toggle span:nth-child(1){
+  top:0px;
+}
+
+#nav-toggle span:nth-child(2){
+  top:11px;
+}
+
+#nav-toggle span:nth-child(3){
+  top:22px;
+}
+
+
+#nav-toggle span{
+  width:100%;
+  height:4px;
+  display:block;
+  position: absolute;
+  left:0px;
+  background-color:white;
+  transition: 0.3s;
+}
+
+
+#nav-toggle.active span:nth-child(1){
+  top:11px;
+  transform: rotate(315deg);
+}
+
+#nav-toggle.active span:nth-child(2){
+  width:0;
+  left:50%;
+}
+
+#nav-toggle.active span:nth-child(3){
+  top:11px;
+  transform: rotate(-315deg);
+}
+
+
+.groval-nav{
+  margin-top:0px;
+  padding:50px 0;
+  width:100%;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+#webcreator .groval-nav{
+  /* margin-left:0px; */
+  padding:50px 0;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.groval-nav li{
+  text-align: center;
+}
+
+.groval-nav li{
+  float:none;
+}
+
+
+nav ul{
+  display:none;
+}
+
+
+.nav-toggle{
+  z-index: 100;
+}
+
+.conect-form input[type=text], .conect-form textarea {
+
+  padding: 13px;
+
+}
+
+.conect-form textarea {
+  height: 150px;
+}
+
+
+/* モーダル */
+.login-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  /* display: none;を追加してください */
+  display:none;
+  width:100%;
+  
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form, #login-form {
+  width:100%;
+}
+
+#signup-form h2, #login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 3%;
+}
+
+#signup-form input, #login-form input {
+  width: 77%;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 2.6% 1.2%;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+.form-control{
+  margin-top:0px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 2% 4%;
+  background-color: black;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 1% auto;
+  cursor: pointer;
+}
+
+
+.fa {
+  margin-right: 5px;
+}
+
+iframe{
+  width:272px;
+}
+
+
+.about{
+  /* background-image: url(/Users/kou/Documents/aivsarts/imge/grafitti-992037_1920.jpg); */
+  background-size: cover;
+  width:90%;
+  margin:100px auto 100px auto;
+  color: white;
+  border:1px solid white;
+  padding-bottom: 70px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  
+
+}
+
+.about-contents{
+  width:64%;
+  margin:0 auto;
+  
+
+}
+
+.title-under{
+  margin-top:50px;
+  
+}
+
+.photo p{
+  margin-top:20px;
+}
+
+
+.history{
+  margin-top:50px;
+  z-index: 1000;
+}
+
+.about-contents li{
+text-align: left;
+}
+
+
+
+
+.skill{
+  color: white;
+  padding-bottom: 70px;
+  margin:200px auto 100px auto ;
+  border:1px solid white;
+  background-color: rgba(0, 0, 0, 0.6);
+  width:90%;
+}
+
+.skill-detail{
+  width:40%;
+  margin:0 auto;
+}
+
+.con-t{
+  width:38%;
+  margin:0 auto ;
+  /* background-color:blue; */
+
+}
+
+}
+
+
+
+@media screen and (min-width:641){
+  nav ul{
+    display:block !important;
+  }
+}
+
+
+
+
+
+@media screen and (max-width:960px){
+ .groval-nav li a{
+/* color:red; */
+  }
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog「aivsarts」</title>
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+    <link href="css/blogcontents.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+
+  <body id="blog">
+
+    <!--  ここからheader-->
+
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="images/AivsArts1.png" alt="aivsarts"></a>
+      </div>
+      <nav>
+        <div id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+        <ul class="groval-nav">
+          <!-- <li><a href="webcreator.html">Web制作</a></li> -->
+          <!-- <li><a href="music.html">Music</a></li>
+          <li><a href="arts.html">アート作品</a></li> -->
+          <li><a href="blog1.html">Blog</a></li>
+          <li><a href="youtube.html">Youtube</a></li>
+          <!-- <li><a href="shop.html">Shop</a></li> -->
+          <li><a href="index.html#conect-point">Contact</a></li>
+          <!-- <li id="login-show"><a href="#">login</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <!--  ここまでheader-->
+
+    <div class="login-modal-wrapper" id="login-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times"></i>
+        </div>
+        <div id="login-form">
+          <h2>Emailログイン</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div id="submit-btn">ログイン</div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="wrap">
+      <div class="top-container">
+
+        <div class="top-image"><a href="#">
+            <img class="top-picture" src="imge/soundboard-1209885_1920.jpg">
+            <p class="title">おすすめ記事</p>
+          </a>
+        </div>
+        <div class="top-image"><a href="#">
+            <img class="top-picture" src="imge/street-art-977800_19201.jpg">
+            <p class="title">おすすめ記事</p>
+          </a>
+        </div>
+        <div class="top-image"><a href="#">
+            <img class="top-picture" src="imge/sign-1209593_19201.jpg">
+            <p class="title">おすすめ記事</p>
+          </a>
+        </div>
+        <div class="top-image"><a href="#">
+            <img class="top-picture" src="imge/face-11037081.jpg">
+            <div class="detail">
+              <p class="title">おすすめ記事</p>
+            </div>
+          </a>
+        </div>
+        <div class="top-image"><a href="#">
+            <img class="top-picture" src="imge/glasses-3002751_19201.jpg">
+            <p class="title">おすすめ記事</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="wrap-container">
+        <div class="container">
+          <h1 class="blog-h1">GitHubでポートフォリオを公開する方法[初心者向け]</h1>
+          <div class="box">
+            <a href="#">
+              <div class="picture">
+                <div class="blog-image"><img src="images/github-394322_1280.png">
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <div class="top-discription">
+              <p>エンジニアは就職する時や案件をもらう時にポートフォリオが必要になります。ポートフォリオの公開にわざわざ有料のサーバを借りるのは手間だという人はGithub
+                Pagesを利用しましょう。Githubの登録が必要なので登録からアップロードまでの手順を紹介します。
+              </p>
+            </div>
+            <div class="mokuji">
+              <h2>目次</h2>
+              <ul>
+                <li><a href="#01">GitHubに登録する</a></li>
+                <li><a href="#02">新しいレポジトリの作成</a></li>
+                <li><a href="#03">リポジトリをローカルにcloneする</a></li>
+                <li><a href="#04">アップロードできているか確認する</a></li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="contents-detail">
+            <div class="first-section">
+              <div class="midasi">
+                <h2 id="01">GitHubに登録する</h2>
+              </div>
+              <div>
+
+                <a href="https://github.co.jp/">Githubへ</a>
+                <section class="first-detail1">
+                  <h4>1</h4>
+                  <p><img src="images/github-top.png" width="700" height="400"></p>
+                  <p>GitHubのページへアクセスし、上右部にあるSign upを押し登録画面に進みます。
+                </section>
+
+                <section class="first-detail1">
+                  <h4>2</h4>
+                  <img src="images/register1.png" class="img-fluid" width="700" height="400">
+                  <p>必要な情報を入力していきます。</p>
+                </section>
+
+                <section class="first-detail1">
+                  <h4>3</h4>
+                  <P><img src="images/a-free.png" width="700" height="400"></P>
+                  <p>情報を入力し次へ進むと、freeかproかどちらかを選択できますがfreeで問題ないです。</P>
+
+                  <p>freeを選択し次へ進むと入力したメールアドレス宛にメールが届くので、確認ボタンを押します。</p>
+                  <P>以上でGithubの登録は終わりです。</P>
+                </section>
+
+              </div>
+            </div>
+            <div class="second-section">
+              <div class="midasi">
+                <h2 id="02">新しいレポジトリの作成</h2>
+              </div>
+              <p>ポートフォリオをアップするためのレポジトリを作成していきます。</p>
+
+              <h4>1</h4>
+              <section class="first-detail1">
+                <P><img src="images/top-page.png" width="700" height="400"></P>
+                <P>Githubのtopページへ行き右上のプラスボタンから「New repository」へ進みます。</P>
+                <h4>2</h4>
+                <P><img src="images/newrepo.png" width="700" height="400"></P>
+
+                <p>そしたらこちらの画面になるので「Repository name」のところにレポジトリの名前を入力します。ここではportfolioにしましたが任意の名前でOKです。</p>
+                <h4>3</h4>
+                <P><img src="images/creat.png" width="700" height="350"></P>
+                <p>「New repository」へ入力が終わったら今回はそのままみ「Create repository」を押してください。</p>
+                <h4>4</h4>
+                <P><img src="images/aaa.png" width="700" height="350"></P>
+                <p>この画面になればGithubにレポジトリが作成された事になります。</p>
+              </section>
+            </div>
+
+
+            <div class="third-section">
+              <div class="midasi">
+                <h2 id="03">リポジトリをローカルにcloneする</h2>
+              </div>
+              <div>
+                <p>Giuhubに作成したレポジトリにポートフォリオをアップロードするため、リポジトリをローカルにクローンします。すると先ほどGithubで作成した「Repository
+                  name」と同じ名前のフォルダが作成されます。その中にアップロードしたいポートフォリオを入れます。</p>
+
+                <h4>1</h4>
+                <section class="first-detail1">
+                  <P><img src="images/aaa.png" width="700" height="350"></P>
+                  <p>先ほどのこの画面で、赤で範囲選択したURLをコピーします。</p>
+
+                  <h4>2</h4>
+                  <P><img src="images/t1.png" width="700" height="222"></P>
+                  <p>
+                    ターミナル(Macの場合)を開きクローンを作成したいディレクトリに移動します。僕は「Desktop」に作成したいので「cd
+                    Desktop/」のコマンドでDesktopへ移動しています。</p>
+                  <p>クローンを作成には「git clone [コピーしたURL]」になります。</p>
+                  <p>すると赤線のようなコマンドになるので「Enter」を押し、実行結果が画像と同じような実行結果になれば成功です。</P>
+
+                  <h4>3</h4>
+                  <P><img src="images/fol.png" width="700" height="394"></P>
+                  <p>先ほどデスクトップにクローンしたフォルダにポートフォリオを入れます。今回私は「Hello World」と表示されるhtmlファイルを入れました。ではこれをアップロードしていきます。</p>
+
+                  <h4>4</h4>
+                  <P><img src="images/t2.png" width="700" height="240"></P>
+                  <p>まず作成したレポジトリのフォルダに移動するため「cd portfolio」とコマンドを打ちます</p>
+
+                  <h4>5</h4>
+                  <P><img src="images/t3.png" width="700" height="340"></P>
+                  <p>次に赤線部「git add index.html」と打ちます。続けて青線部「git commit -m "任意のコメント"」を入力し、画像のような表示になればOKです。</p>
+
+                  <h4>6</h4>
+                  <P><img src="images/t4.png" width="700" height="440"></P>
+                  <p>そして最後に緑線部「git push origin master」と入力し、画像のように表示されれば成功です。</p>
+
+                  <div class="midasi">
+                    <h2 id="04">アップロードできているか確認する</h2>
+                  </div>
+                  <h4>1</h4>
+                  <P><img src="images/setting.png" width="700" height="340"></P>
+                  <p>画像のsettingsという部分を押します。</p>
+                  <h4>2</h4>
+                  <P><img src="images/master.png" width="700" height="340"></P>
+                  <p>下の方にスライドをしていくとGitHub Pagesという部分があるので「None」から「master branch」に変更します。</p>
+                  <h4>3</h4>
+                  <P><img src="images/check.png" width="700" height="340"></P>
+                  <p>そしてURLの枠が緑になったら、あとはアクセスすれば無事アップロード出来ているはずです。</p>
+                  <h4>4</h4>
+                  <P><img src="images/hello.png" width="700" height="340"></P>
+                  <p>このようにHello Worldと表示されました。</p>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="pager">
+            <ul class="center">
+              <li><a href="#">1</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+
+
+
+      <aside class="sidebar blog-sidebar">
+        <section>
+          <h2 class="search">search</h2>
+          <form method="get" action="#" class="search_container">
+            <input type="text" size="25" placeholder="　キーワード検索">
+            <input type="submit" value="&#xf002">
+          </form>
+        </section>
+        <section>
+          <h2 class="category">Category</h2>
+          <ul class="category-detail">
+            <li><a href="#">人工知能</a></li>
+            <li><a href="#">音楽</a></li>
+            <li><a href="#">絵</a></li>
+            <li><a href="#">ビジネス</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="archive">Archive</h2>
+          <ul>
+            <li></li>
+          </ul>
+        </section>
+      </aside>
+
+
+      <footer>
+        <p class="txts">(C)2019 aivsarts.</p>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+
+
+</html>
